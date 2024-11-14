@@ -32,7 +32,7 @@ This is the code that will be ran on the computer to prosses the data that is st
 This both the frames and PCBs.
 
 ### 4. Extra Documentation
-This is all teh documentation that was created in the testing and researching on creating the glasses
+This is all the documentation that was created in the testing and researching on creating the glasses
 
 
 ## What the Project could use
