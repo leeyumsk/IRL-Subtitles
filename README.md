@@ -33,3 +33,13 @@ This both the frames and PCBs.
 
 ### 4. Extra Documentation
 This is all teh documentation that was created in the testing and researching on creating the glasses
+
+
+## What the Project could use
+1. Faster prossesing, moving computaion onthe the board
+2. Better intergration between programs, face detect, sound location, and speach to text.
+
+## refrence
+When writeing StuckAtPrototyoe racer was used as refrence
+https://github.com/StuckAtPrototype/Racer/blob/master/README.md?plain=1
+
