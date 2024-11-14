@@ -14,7 +14,7 @@ Here is all the diffrent file on the components, configerations, testing documen
 | GPIO 43 (TX0) | GPIO 9| | GPIO 11 | 3V3 |
 | GPIO 16 | GPIO 15 | | GPIO 12 | GND |
 
-There are more free pin on the ESP 32 that are currently not being used, refer to the ESP32 documentation to see what pins are not tied to other functions. 
+There are more free pin on the ESP32 that are currently not being used, refer to the ESP32 documentation to see what pins are not tied to other functions. 
 
 ## Testing 
 There was a variety of tests done to figure out some of the specifications of the project. 
