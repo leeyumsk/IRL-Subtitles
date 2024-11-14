@@ -8,11 +8,8 @@ Here is all the diffrent file on the components, configerations, testing documen
 |Left| | |Right| |
 | GND | GPIO 12 | | GPIO 15 | GPIO 16 |
 | 3V3 | GPIO 11| | GPIO 9| GPIO 43 (TX0) | 
-| ------------- | ------- | - | ------- | ------------- |
 | GPIO 44 (RX0) | GPIO 10 | | GPIO 10 | GPIO 44 (RX0) | 
-| ------------- | ------- | - | ------- | ------------- |
 | GPIO 43 (TX0) | GPIO 9| | GPIO 11 | 3V3 |
-| ------------- | ------- | - | ------- | ------------- |
 | GPIO 16 | GPIO 15 | | GPIO 12 | GND |
 | ------------- | ------- | - | ------- | ------------- |
 
