@@ -11,10 +11,10 @@ The current state of the project is that there is no prossesing that is happenin
 
 ## Project Structure
 The project consists of
-1. Firmware
-2. Software
-3. Hardware
-4. Extra Documentation
+1. [Firmware](#1-firmware)
+2. [Software](#2-software)
+3. [Hardware](#3-hardware)
+4. [Extra Documentation](#4-extra-documentation)
 
 Each are stuctured into there own folders, and sub groups.
 

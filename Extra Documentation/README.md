@@ -15,3 +15,4 @@ Here is all the diffrent file on the components, configerations, testing documen
 | GPIO 16 | GPIO 15 | | GPIO 12 | GND |
 
 There are more free pin on the ESP 32 that are currently not being used, refer to the ESP32 documentation to see what pins are not tied to other functions. 
+
