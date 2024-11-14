@@ -49,5 +49,5 @@ https://github.com/espressif/esp-who/tree/master
 
 ## Refrence (rempove when published)
 When writeing StuckAtPrototyoe racer was used as refrence
-https://github.com/StuckAtPrototype/Racer/blob/master/README.md?plain=1
-https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#links
+[Example from site](https://github.com/StuckAtPrototype/Racer/blob/master/README.md?plain=1)
+[GitHub Doc](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#links)
