@@ -29,15 +29,23 @@ This is the code that is running on the on the ESP32.
 This is the code that will be ran on the computer to prosses the data that is streamed.
 
 ### 3. Hardware
-This both the frames and PCBs.
+This has both the PBC files and the glasses cad models.
+
+#### KiCad
+This has the KiCad models that were to produce the boards. That includes the schematics, the PCB files, and gerber files to order the glasses.
+
+#### Onshape
+Onshape was used to the frames that the PCBs will fit in on the the glasses. 
 
 ### 4. Extra Documentation
-This is all the documentation that was created in the testing and researching on creating the glasses
-
+This is all the documentation that was created in the testing and researching on creating the glasses. This also has the pinouts that were used on the glasses for refrence.
 
 ## What the Project could use
 1. Faster prossesing, moving computaion onthe the board
 2. Better intergration between programs, face detect, sound location, and speach to text.
+
+## Helpful Links
+https://github.com/espressif/esp-who/tree/master
 
 ## Refrence (rempove when published)
 When writeing StuckAtPrototyoe racer was used as refrence
