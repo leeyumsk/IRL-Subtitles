@@ -47,7 +47,7 @@ This is all the documentation that was created in the testing and researching on
 ## Helpful Links
 https://github.com/espressif/esp-who/tree/master
 
-## Refrence (rempove when published)
+## Refrence (remove when published)
 When writeing StuckAtPrototyoe racer was used as refrence
 [Example from site](https://github.com/StuckAtPrototype/Racer/blob/master/README.md?plain=1)
 [GitHub Doc](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#links)
