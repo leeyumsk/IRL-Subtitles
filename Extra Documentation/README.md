@@ -6,6 +6,7 @@ Here is all the diffrent file on the components, configerations, testing documen
 
 (*refrence to image in folder img added later once glasses are fully put together*)
 
+| ------------- | ------- | - | ------- | ------------- |
 |Left| | |Right| |
 | GND | GPIO 12 | | GPIO 15 | GPIO 16 |
 | 3V3 | GPIO 11| | GPIO 9| GPIO 43 (TX0) | 
