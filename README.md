@@ -1,4 +1,4 @@
-# This branch is fromat example to go to
+# This branch is format example to go to
 
 # IRL-Subtitles
 
