@@ -18,7 +18,7 @@ The current state of the project is that there is no processing that is happenin
 
 
 ## Project Structure
-The project consists of
+The project consists of:
 1. [Firmware](#1-firmware)
 2. [Software](#2-software)
 3. [Hardware](#3-hardware)
