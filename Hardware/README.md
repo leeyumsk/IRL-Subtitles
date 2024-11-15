@@ -15,7 +15,7 @@ The PCB has gone through many revisions befoe it was edventualy ordered.
 
 ### Version 1.3
 
-<img src="/Media/ESP32GlassV1.3.png
+<img src="/Media/ESP32GlassV1.3.png">
 
 ### Version 2.3
 
