@@ -13,3 +13,5 @@ To capture analog audio to be sent to the prossesor the ___ mics were used. Anal
 
 To capture digital audio the ICS43434 from adafuit. This works great as it was all compact and easy to bread board and test. The only problem was to creat a test that we could preform without decoding the I2S data stream, a code was needed to capture the audio. This was one of the problems as once audio was able to be captured the prossesing of the data was not preformed correctly, as it was written for the normal esp32 divkit, not the esp32 s3 devkit.
 
+<img src="/Media/Digital Board.jpg">
+
