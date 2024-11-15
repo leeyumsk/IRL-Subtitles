@@ -9,7 +9,7 @@ Using techniques similar to human perception to localize sounds and speakers.
 ## Project Details
 
 
-The final goal of the project is to make AR-Glasses that can display text taken from microphones to be displayed on a heads up display to the user. For this, we are only using off the shelf components so that anyone can replicate the project if they so want to.
+The final goal of the project is to make AR-Glasses that can display text taken from microphones to be displayed on a heads up display to the user. For future replication, we are only using off the shelf components so that anyone can replicate the project if they so want to.
 
 
 <img src="/Media/OSHE_Logo_300PPI.png" width="250" >
