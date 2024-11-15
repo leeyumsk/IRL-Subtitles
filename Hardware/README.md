@@ -14,7 +14,7 @@ Version 1.0 was the version that was started in Spring of 2024 this design was m
 
 ### Version 1.2
 
-Vesion 1.2 was the version that was after figuring out that the ESP32 platform was going to be used. This was need to be programed with an external uart chip though the header pins. 
+Vesion 1.2 was the version that was after figuring out that the ESP32 platform was going to be used. This was need to be programed with an external uart chip though the header pins. The header pins are planed to be used for board to board communication and power transfer.
 
 <img src="/Media/ESP32GlassV1.png">
 
@@ -31,7 +31,7 @@ Version 2.0 was the first version with the ESP32-S3 as the microcontroler to be 
 
 ### Version 2.1 & 2.2
 
-Versions 2.1 and 2.2 are the current version that is being tested. There are the addition of mouse bites to be printed by and external manufaturer, and minor layout changes. The changes between the between 2.1 and 2.2 are only the mouse bites that connect the two halfs.
+Versions 2.1 and 2.2 are the current version that is being tested. There are the addition of mouse bites to be printed by and external manufaturer, and minor layout changes. The changes between the between 2.1 and 2.2 are only the mouse bites that connect the two halfs. 
 
 <img src="/Media/ESP32S3GlassV2.1.png">
 

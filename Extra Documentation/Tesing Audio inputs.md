@@ -1,11 +1,11 @@
 # Audio Methods
 This was one of the major things to consider this semester was how to collect the audio. There were two main ways that could be used, analog and digital. 
 
-<img src="/Media/Mics.jpg" width="250">
+<img src="/Media/Mics.jpg" width="500">
 
 ## Analog
 
-To capture analog audio to be sent to the prossesor the ___ mics were used. Analizing the circuit with the osiloscope was shown that there was a lot of noise. That there nosie that was getting though the simple filter that was made on the bread board. This could work but would take up valuable realestate that would be limited on the board. This was cuppled with the amount of time that would need to be spent to create a filter to reduce all tehe noice to manageble levels to prosses.
+To capture analog audio to be sent to the prossesor, the CMA-4544PF-W electret condenser microphone were used in testing. Analizing the circuit with the osiloscope was shown that there was a lot of noise. That there nosie that was getting though the simple filter that was made on the bread board. This could work but would take up valuable realestate that would be limited on the board. This was cuppled with the amount of time that would need to be spent to create a filter to reduce all tehe noice to manageble levels to prosses.
 
 <img src="/Media/Anolog Board.jpg">
 
