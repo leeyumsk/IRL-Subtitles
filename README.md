@@ -32,7 +32,7 @@ This is the code that is running on the ESP32. Most of the code here is for data
 ### 2. Software
 This is the code that will be run on the computer to process the data that is streamed. Due to time constraints the integration of the audio localization was not included in the OpenCV and speech to text display.
 
-### 3. Hardware
+### 3. [Hardware](/Hardware/README.md)
 This has both the PBC files and the glasses cad models.
 
 #### KiCad
@@ -41,12 +41,13 @@ This has the KiCad models that were to produce the boards. That includes the sch
 #### Onshape
 Onshape was used to the frames that the PCBs will fit in on the glasses.
 
-### 4. Extra Documentation
+### 4. [Extra Documentation](/Extra%20Documentation/README.md)
 This is all the documentation that was created in the testing and researching on creating the glasses. This also has the pinouts that were used on the glasses for reference.
 
 ## What the Project could use
 1. Faster processing, moving computation on the the board
 2. Better integration between programs, face detect, sound location, and speech to text.
+3. Addition of buttons for chip enable and GPIO0 to ground to make programing easier.
 
 ## Helpful Links
 https://github.com/espressif/esp-who/tree/master
