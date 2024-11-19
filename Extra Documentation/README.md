@@ -14,6 +14,8 @@ Here is where all the different files on the components, configurations, testing
 | GPIO 11 | 3V3 | | GPIO 43 (TX0) | GPIO 9| 
 | GPIO 12 | GND | | GPIO 16 | GPIO 15 |
 
+GPIO 41, 42, and 2 are used for the mics
+
 There are more free pin on the ESP32 that are currently not being used, refer to the ESP32 documentation to see what pins are not tied to other functions. There is no boot button so GPIO 0 will need to manually bridged to ground to program.
 
 ## Testing
