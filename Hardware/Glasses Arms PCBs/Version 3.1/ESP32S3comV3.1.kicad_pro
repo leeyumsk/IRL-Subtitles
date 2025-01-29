@@ -547,7 +547,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "Gerber/",
+      "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "ESP32S3comV3.1.step",
