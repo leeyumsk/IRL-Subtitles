@@ -1080,6 +1080,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 97.79) (xy 186.69 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04fe211c-c9cf-45ea-bfc0-6c96b9b54723")
+	)
+	(wire
+		(pts
 			(xy 222.25 92.71) (xy 228.6 92.71)
 		)
 		(stroke
@@ -1450,6 +1460,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 123.19) (xy 228.6 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bac08434-bf10-4a96-bd9b-a70f4996f9c3")
+	)
+	(wire
+		(pts
 			(xy 199.39 92.71) (xy 209.55 92.71)
 		)
 		(stroke
@@ -1488,6 +1508,17 @@
 		)
 		(uuid "f9717fe2-cf5e-4484-bcb8-ce0dc53c3fa9")
 	)
+	(label "LB"
+		(at 228.6 123.19 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "078daebd-3259-40b1-95a0-db2fecf4bfea")
+	)
 	(label "WS1"
 		(at 228.6 115.57 180)
 		(fields_autoplaced yes)
@@ -1520,6 +1551,17 @@
 			(justify left bottom)
 		)
 		(uuid "3e983a24-ca74-4700-a7fd-89ed1ff8f2f4")
+	)
+	(label "LB"
+		(at 175.26 97.79 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "60c3cc5b-f09b-4db9-8ff7-fdb58211689e")
 	)
 	(label "VCC_3V3"
 		(at 201.93 90.17 0)

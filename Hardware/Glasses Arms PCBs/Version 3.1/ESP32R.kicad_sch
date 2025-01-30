@@ -9,6 +9,282 @@
 		(rev "3.1")
 	)
 	(lib_symbols
+		(symbol "2025-01-30_01-45-57:OS102011MA1QN1"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 10.16 7.62 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "OS102011MA1QN1"
+				(at 10.16 5.08 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "OS102011MA1QN1_CNK"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "OS102011MA1QN1"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "OS102011MA1QN1"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "OS102011MA1QN1_CNK"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "OS102011MA1QN1_0_1"
+				(polyline
+					(pts
+						(xy 7.62 -5.08) (xy 12.7 -5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 0) (xy 8.5725 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 7.62 -5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 10.16 -2.2098)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 12.7 -2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -1.905) (xy 8.89 0.635)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 11.7475 0) (xy 12.7 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 -5.08) (xy 12.7 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 2.54) (xy 7.62 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 8.89 0)
+					(radius 0.3048)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 10.16 -1.905)
+					(radius 0.3048)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 11.43 0)
+					(radius 0.3048)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 0)
+					(length 7.62)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 20.32 -2.54 180)
+					(length 7.62)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 20.32 0 180)
+					(length 7.62)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "CMM-4030D-261-I2S-TR:CMM-4030D-261-I2S-TR"
 			(pin_names
 				(offset 1.016)
@@ -3692,6 +3968,16 @@
 	)
 	(wire
 		(pts
+			(xy 209.55 101.6) (xy 215.9 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44b82774-4c9c-4842-a465-e4d8a2263940")
+	)
+	(wire
+		(pts
 			(xy 107.95 179.07) (xy 120.65 179.07)
 		)
 		(stroke
@@ -3972,6 +4258,16 @@
 	)
 	(wire
 		(pts
+			(xy 209.55 99.06) (xy 212.09 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f29aa95-12a5-4589-b6b4-a656323acb56")
+	)
+	(wire
+		(pts
 			(xy 38.1 149.86) (xy 54.61 149.86)
 		)
 		(stroke
@@ -4049,6 +4345,16 @@
 			(type default)
 		)
 		(uuid "8347fc12-1340-4541-bf77-d4ffc4630250")
+	)
+	(wire
+		(pts
+			(xy 184.15 99.06) (xy 189.23 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8401a1c0-59b1-48e3-982a-87cf4c4b1fe8")
 	)
 	(wire
 		(pts
@@ -4834,6 +5140,17 @@
 		)
 		(uuid "0c4cb024-0203-40e2-9025-b191f4728a7e")
 	)
+	(label "Bat"
+		(at 212.09 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "115803dc-9a58-469f-afd9-fe7fef05d258")
+	)
 	(label "GPIO11"
 		(at 120.65 179.07 0)
 		(fields_autoplaced yes)
@@ -5088,7 +5405,7 @@
 		(uuid "86008d96-6b1b-41f0-808b-f29f848e84c7")
 	)
 	(label "GND"
-		(at 129.54 55.88 0)
+		(at 184.15 99.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5198,13 +5515,13 @@
 		(uuid "b71f8789-5b1d-4f76-a2d7-d9e83d41f031")
 	)
 	(label "EN"
-		(at 129.54 53.34 0)
+		(at 215.9 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "c715eead-aee6-4f32-9127-15afa75b9b38")
 	)
@@ -8289,6 +8606,79 @@
 			(project "ESP32S3comV3.1"
 				(path "/d6aa16de-0937-4a13-9de5-3126c435d533/20542354-0dfe-41b3-9978-21e838dfcc86"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "2025-01-30_01-45-57:OS102011MA1QN1")
+		(at 189.23 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef04fa85-c2f4-4dec-9809-afa84bcfdbac")
+		(property "Reference" "SW2"
+			(at 199.39 91.44 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "OS102011MA1QN1"
+			(at 199.39 93.98 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "OS102011MA1QN1_CNK"
+			(at 189.23 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "OS102011MA1QN1"
+			(at 189.23 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 189.23 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "9549b6f2-1069-44ee-b26e-50910e2c7466")
+		)
+		(pin "1"
+			(uuid "ee2d87b5-27a7-42f1-8acf-5aecd8422fd0")
+		)
+		(pin "2"
+			(uuid "1fce5c37-5209-4097-b4a0-b6eca0eb31b3")
+		)
+		(instances
+			(project ""
+				(path "/d6aa16de-0937-4a13-9de5-3126c435d533/20542354-0dfe-41b3-9978-21e838dfcc86"
+					(reference "SW2")
 					(unit 1)
 				)
 			)
