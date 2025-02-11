@@ -24767,7 +24767,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "AR Glass\nV3.1\n1/25\n"
+	(gr_text "AR Glass\nV3.2\n1/25\n"
 		(at 200.52 92.47 180)
 		(layer "F.SilkS")
 		(uuid "0a134be6-8b76-451b-ae17-8c1c17b15b7e")
@@ -24792,7 +24792,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "AR Glass\nV3.1\n1/25\n"
+	(gr_text "AR Glass\nV3.2\n1/25\n"
 		(at 159.847002 138.910776 0)
 		(layer "F.SilkS")
 		(uuid "485d8ef2-ab5e-4ad0-a7da-d66360d46eeb")
