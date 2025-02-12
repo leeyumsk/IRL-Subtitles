@@ -48,7 +48,7 @@ Version 3.1 is the second itteration of spring 2025, where there in now only one
 <img src="/Media/ESP32S3GlassV3.1.png">
 
 ### Version 3.2 & 3.3
-Version 3.2 and 3.3 are the same as 3.1 and 3.0 respectivly, where the only chanage is the mics, same as the on in version 2.2. This had only had some small routing configuration and that had to be done.
+Version 3.2 and 3.3 are the same as 3.1 and 3.0 respectivly, where the only chanage is the mics, same as that are on version 2.2. This had only had some small routing configuration and that had to be done.
 
 Version 3.2
 <img src="/Media/ESP32S3GlassV3.2.png">
