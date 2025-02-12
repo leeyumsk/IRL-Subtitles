@@ -31,6 +31,23 @@ source = cv2.VideoCapture(s)
 win_name = "Camera Preview"
 cv2.namedWindow(win_name, cv2.WINDOW_NORMAL)
 
+# Diagnostic Code to Figure out the Haar Cascade Mouth .xml file
+print("OpenCV data directory:", cv2.data.haarcascades)
+
+# List all files in the haarcascades directory
+try:
+    haarcascade_files = os.listdir(cv2.data.haarcascades)
+    print("\nAvailable cascade files:")
+    for file in haarcascade_files:
+        print(f"- {file}")
+except Exception as e:
+    print(f"Error accessing directory: {e}")
+
+# Try to load the classifier and print detailed result
+cascade_path = cv2.data.haarcascades + 'haarcascade_mcs_mouth.xml'
+print(f"\nTrying to load cascade from: {cascade_path}")
+print(f"File exists: {os.path.exists(cascade_path)}")
+
 # Load the face detection model
 net = cv2.dnn.readNetFromCaffe("deploy.prototxt", "res10_300x300_ssd_iter_140000_fp16.caffemodel")
 # Model parameters
