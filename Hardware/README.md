@@ -31,8 +31,28 @@ Version 2.0 was the first version with the ESP32-S3 as the microcontroller to be
 
 ### Version 2.1 & 2.2
 
-Versions 2.1 and 2.2 are the current version that is being tested. There are the addition of mouse bites to be printed by an external manufacturer, and layout changes, moving the usb incase of signal degeneration. The changes between the between 2.1 and 2.2 are only the mouse bites that connect the two halfs.
+Versions 2.1 and 2.2 are the second iterations of board with the ESP32-S3 with the correct footprint. There are the addition of mouse bites to be printed by an external manufacturer, and layout changes, moving the usb incase of signal degeneration. The changes between the between 2.1 and 2.2 are only the mouse bites that connect the two halfs.
 
 <img src="/Media/ESP32S3GlassV2.1.png">
+
+### Version 3.0
+
+Versions 3.0 is an iteration with diffrent mics, the MSM261S4030H0R, on the board. This was the plan to use to be easier to solder on but at the time of ordering there where none in stock and were obsolete. There is also the addition of an addapter board for the ESP32-S3 Eye. This also adds a port to connect a battery WITH A BMS to the board.
+
+<img src="/Media/ESP32S3GlassV3.0.png">
+
+### Version 3.1
+
+Version 3.1 is the second itteration of spring 2025, where there in now only one ESP32-S3 on the sides of the frames. This has two spots to place a battery on where the battery WITH A BMS to the board and on to use with a socketed BMS designed like the one from adafuit, [PowerBoost 500 Charger](https://www.adafruit.com/product/1944). The addapter for the eye has also change to pass through the audio data to the other board.
+
+<img src="/Media/ESP32S3GlassV3.1.png">
+
+### Version 3.2 & 3.3
+Version 3.2 and 3.3 are the same as 3.1 and 3.0 respectivly, where the only chanage is the mics, same as the on in version 2.2. This had only had some small routing configuration and that had to be done.
+
+Version 3.2
+<img src="/Media/ESP32S3GlassV3.2.png">
+Version 3.3
+<img src="/Media/ESP32S3GlassV3.3.png">
 
 ## Frames
