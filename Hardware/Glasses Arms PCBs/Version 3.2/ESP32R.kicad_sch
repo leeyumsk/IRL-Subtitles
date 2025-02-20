@@ -4952,6 +4952,16 @@
 		)
 		(uuid "0aa207e6-44e4-4b75-aace-433000eabf26")
 	)
+	(text "Microphone and board-to-board connections\n"
+		(exclude_from_sim no)
+		(at 46.228 187.452 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "268facb0-fbf0-494d-ac9a-e9a0e8819976")
+	)
 	(text "I2S"
 		(exclude_from_sim no)
 		(at 136.398 134.62 0)
