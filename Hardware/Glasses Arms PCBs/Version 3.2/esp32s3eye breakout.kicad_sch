@@ -1140,6 +1140,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 96.52) (xy 160.02 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1df89852-c38a-42dc-9429-209881b01e9e")
+	)
+	(wire
+		(pts
 			(xy 189.23 74.93) (xy 189.23 71.12)
 		)
 		(stroke
@@ -1180,6 +1190,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 93.98) (xy 160.02 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2eea8070-472c-489a-b8aa-9aa61f51fc04")
+	)
+	(wire
+		(pts
 			(xy 228.6 97.79) (xy 228.6 100.33)
 		)
 		(stroke
@@ -1197,6 +1217,16 @@
 			(type default)
 		)
 		(uuid "3e5800dc-e764-4b19-9ae5-e67a53ee476f")
+	)
+	(wire
+		(pts
+			(xy 144.78 99.06) (xy 160.02 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ead43b4-6a1d-4b72-b7ca-14e34be93360")
 	)
 	(wire
 		(pts
@@ -1347,6 +1377,16 @@
 			(type default)
 		)
 		(uuid "890a5f13-4a4e-4031-9606-a940fb3b35dc")
+	)
+	(wire
+		(pts
+			(xy 144.78 88.9) (xy 160.02 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8918ef98-3dc4-4bb2-b06a-dfee0bdc80ca")
 	)
 	(wire
 		(pts
@@ -1530,6 +1570,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 91.44) (xy 160.02 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e88107b7-0685-43e4-ab45-9a0e348a8e21")
+	)
+	(wire
+		(pts
 			(xy 199.39 95.25) (xy 209.55 95.25)
 		)
 		(stroke
@@ -1559,6 +1609,17 @@
 			(justify right bottom)
 		)
 		(uuid "0e3cd740-544b-41bd-824f-1f0b538465d2")
+	)
+	(label "VCC_3V3"
+		(at 160.02 99.06 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1465fb77-a7cc-4157-bf4d-3413b1065470")
 	)
 	(label "WS1"
 		(at 228.6 118.11 180)
@@ -1614,6 +1675,28 @@
 			(justify left bottom)
 		)
 		(uuid "61638c0b-dd9e-4d52-a4e4-180492a32256")
+	)
+	(label "SCK1"
+		(at 160.02 93.98 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "709af1df-5f5a-4a92-ad1b-3b6390effa5a")
+	)
+	(label "LB"
+		(at 160.02 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "71372d42-a686-41ea-a0b4-8ccc775ca67e")
 	)
 	(label "IO43"
 		(at 200.66 128.27 0)
@@ -1692,6 +1775,17 @@
 		)
 		(uuid "c4ac8a15-0b6c-4c8a-8a73-113cc676360a")
 	)
+	(label "SD1"
+		(at 160.02 96.52 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d36be7c3-7d92-4bf0-9238-e20a284166e9")
+	)
 	(label "SCK1"
 		(at 228.6 120.65 180)
 		(fields_autoplaced yes)
@@ -1725,6 +1819,17 @@
 		)
 		(uuid "e6d2edf4-5510-48d0-a8b8-6b69d9faa746")
 	)
+	(label "WS1"
+		(at 160.02 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e6d43d26-3b63-4ec1-b9ea-6a7a2af4abcd")
+	)
 	(label "SCK1"
 		(at 175.26 92.71 0)
 		(fields_autoplaced yes)
@@ -1746,6 +1851,66 @@
 			(justify left bottom)
 		)
 		(uuid "eeb9267c-75fb-462b-9b05-2427ec00ffb4")
+	)
+	(hierarchical_label "WS1"
+		(shape input)
+		(at 144.78 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0ecfdd77-db0d-4363-ada5-dd9f67b09a53")
+	)
+	(hierarchical_label "SCK1"
+		(shape input)
+		(at 144.78 93.98 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "454c3ceb-48f0-4da2-ac14-82b0bdde8746")
+	)
+	(hierarchical_label "LB"
+		(shape input)
+		(at 144.78 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "873e42cb-1fb6-4b4b-b9ef-9ef9e26c904d")
+	)
+	(hierarchical_label "SD1"
+		(shape input)
+		(at 144.78 96.52 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c12d80b4-b1b5-4e88-a612-e8bb1606af71")
+	)
+	(hierarchical_label "VCC_3V3"
+		(shape input)
+		(at 144.78 99.06 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dc104fe6-9262-4f68-9730-64b1563fd00a")
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad_MP")

@@ -530,6 +530,7 @@
     },
     "net_colors": null,
     "netclass_assignments": {
+      "/BoardL/GPIO0": "GPIO0",
       "/BoardR/GPIO0": "GPIO0",
       "/GPIO0": "GPIO0",
       "Net-(C6-Pad1)": "VCC_3V3",
@@ -752,12 +753,12 @@
       "Root"
     ],
     [
-      "20542354-0dfe-41b3-9978-21e838dfcc86",
-      "BoardR"
+      "e0b06ad5-f88d-4eec-8e02-d73775df7ce2",
+      "BoardL"
     ],
     [
-      "c926a916-72b1-471d-b154-f9387661815f",
-      "Eye connect"
+      "20542354-0dfe-41b3-9978-21e838dfcc86",
+      "BoardR"
     ]
   ],
   "text_variables": {}
