@@ -11,7 +11,7 @@ The final goal of the project is to make AR-Glasses that can display text taken 
 <img src="/Media/OSHE_Logo_300PPI.png" width="250" >
 
 ## Current State
-The current state of the project is that there is no processing that is happening locally on the board, all the data is being streamed over to a computer to be processed and displayed. There are two ESP32-S3 wroom 1U that are being used to get audio and one ESP32-S3 eye that is acting as an AP and handling the data routing. There is no battery on the glasses and will need to powered by usb on the boards (power need to go on the right board or the eye to be able to the combination)
+The current state of the project is that there is no processing that is happening locally on the board, all the data is being streamed over to a computer to be processed and displayed. There are two ESP32-S3 wroom 1U that are being used to get audio and one ESP32-S3 eye that is acting as an AP and handling the data routing. This is a battery powered data colletion unit.
 
 ## Project Structure
 The project consists of:
@@ -47,12 +47,11 @@ This is all the documentation that was created in the testing and researching on
 ## What the Project could use
 1. Faster processing, moving computation on the the board
 2. Better integration between programs, face detect, sound location, and speech to text.
-3. Addition of buttons for chip enable and GPIO0 to ground to make programing easier.
 
 ## Helpful Links
 https://github.com/espressif/esp-who/tree/master
 
-## Reference (remove when published)
+## Reference (remove nonrelated when published)
 When writing, StuckArt Prototype racer was used as reference
 
 [Example from site](https://github.com/StuckAtPrototype/Racer/blob/master/README.md?plain=1)
