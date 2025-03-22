@@ -1,0 +1,102 @@
+import os
+import cv2
+import sys
+import numpy as np
+import threading
+import time
+import sounddevice as sd
+import torch
+from faster_whisper import WhisperModel
+
+# Global variable to store transcribed text
+transcription_text = ""
+
+# ==================== Speech-to-Text (Runs in Background) ====================
+def record_and_transcribe():
+    global transcription_text
+    SAMPLE_RATE = 16000  # Whisper expects 16kHz
+    CHUNK_DURATION = 5  # Recording duration in seconds
+    OVERLAP_DURATION = 3  # Overlap ensures no gaps
+
+    model = WhisperModel("small", device="cuda" if torch.cuda.is_available() else "cpu", compute_type="float16")
+
+    previous_audio = np.array([], dtype=np.float32)  # ✅ Ensure correct 1D dtype
+
+    while True:
+        # Record audio
+        audio = sd.rec(int((CHUNK_DURATION + OVERLAP_DURATION) * SAMPLE_RATE), samplerate=SAMPLE_RATE, channels=1, dtype='float32')
+        sd.wait()
+
+        # Flatten recorded audio to ensure it is 1D
+        audio = audio.flatten()
+
+        # Debugging: Print shapes to verify dimensions
+        print(f"Previous audio shape: {previous_audio.shape}, New audio shape: {audio.shape}")
+
+        # Ensure previous_audio is 1D before concatenation
+        combined_audio = np.concatenate((previous_audio.flatten(), audio)).astype(np.float32)
+
+        # Transcribe using Faster-Whisper
+        segments, _ = model.transcribe(combined_audio, beam_size=5)
+        transcription_text = " ".join(segment.text for segment in segments)
+
+        # Debugging: Print transcribed text
+        print(f"Transcribed: {transcription_text}")
+
+        # Keep last part for overlap
+        previous_audio = audio[-int(OVERLAP_DURATION * SAMPLE_RATE):]  # ✅ Maintain 1D shape
+
+# Start transcription in a separate thread
+transcription_thread = threading.Thread(target=record_and_transcribe, daemon=True)
+transcription_thread.start()
+
+# ==================== Face Detection ====================
+s = 0
+if len(sys.argv) > 1:
+    s = sys.argv[1]
+
+source = cv2.VideoCapture(s)
+cv2.namedWindow("Camera Preview", cv2.WINDOW_NORMAL)
+
+# Load the face detection model
+net = cv2.dnn.readNetFromCaffe("deploy.prototxt", "res10_300x300_ssd_iter_140000_fp16.caffemodel")
+
+# Model parameters
+in_width, in_height = 300, 300
+mean = [104, 117, 123]
+conf_threshold = 0.7
+
+while cv2.waitKey(1) != 27:
+    has_frame, frame = source.read()
+    if not has_frame:
+        break
+    frame = cv2.flip(frame, 1)
+    frame_height, frame_width = frame.shape[:2]
+
+    # Convert frame to blob for neural network
+    blob = cv2.dnn.blobFromImage(frame, 1.0, (in_width, in_height), mean, swapRB=False, crop=False)
+    net.setInput(blob)
+    detections = net.forward()
+
+    for i in range(detections.shape[2]):
+        confidence = detections[0, 0, i, 2]
+        if confidence > conf_threshold:
+            # Extract face bounding box coordinates
+            x_left_bottom = int(detections[0, 0, i, 3] * frame_width)
+            y_left_bottom = int(detections[0, 0, i, 4] * frame_height)
+            x_right_top = int(detections[0, 0, i, 5] * frame_width)
+            y_right_top = int(detections[0, 0, i, 6] * frame_height)
+
+            # Draw face bounding box
+            cv2.rectangle(frame, (x_left_bottom, y_left_bottom), (x_right_top, y_right_top), (0, 255, 0), 2)
+
+            # Display transcribed text in the box
+            if transcription_text:
+                text = transcription_text[-50:]  # Show last few words
+                cv2.putText(frame, text, (x_left_bottom, y_left_bottom - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
+
+    # Show the frame
+    cv2.imshow("Camera Preview", frame)
+
+source.release()
+cv2.destroyAllWindows()

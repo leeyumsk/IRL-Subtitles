@@ -18,7 +18,7 @@ class AudioProcessor:
         self.BUFFER_SIZE = self.SAMPLE_RATE * self.BUFFER_DURATION
         
         # ESP32 settings
-        self.ESP32_URL = "http://192.168.4.5/ach1"
+        self.ESP32_URL = "http://192.168.4.1/ach1"
         
         # Separate buffers for left and right channels
         self.audio_buffer_left = []
