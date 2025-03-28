@@ -1,0 +1,9 @@
+have two test files test 3 and test 4
+you will have to change the configuration file to get it to work for the test files
+
+Test 3:
+raw.fs and general.samplerate.mu will need to be 22050
+Test 4:
+raw.fs and general.samplerate.mu will need to be 24000
+
+
