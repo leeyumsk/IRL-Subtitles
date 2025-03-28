@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# Update system and install necessary dependencies
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y build-essential curl python3 python3-pip python3-dev libssl-dev libffi-dev git
+
+# Install Node.js (using the correct version required by ODAS Web)
+curl -fsSL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt install -y nodejs
+
+# Ensure npm and node versions
+node -v
+npm -v
+
+# Set Python 3 for npm if required
+npm config set python /usr/bin/python3
+
+# Clone the ODAS Web repository (if not already cloned)
+if [ ! -d "odas_web" ]; then
+    git clone https://github.com/introlab/odas_web.git
+fi
+cd odas_web
+
+# Remove problematic grpc package and install the recommended alternative
+npm uninstall grpc
+npm install @grpc/grpc-js
+
+# Clean and reinstall dependencies
+rm -rf node_modules package-lock.json
+npm cache clean --force
+npm install
+
+# Rebuild dependencies (Electron-related)
+npm rebuild
+npx electron-rebuild
+
+# Fix Electron running in headless environments (optional)
+if [ -z "$DISPLAY" ]; then
+    echo "No DISPLAY detected. Installing X virtual framebuffer..."
+    sudo apt install -y xvfb
+    xvfb-run --auto-servernum npm start
+else
+    npm start
+fi

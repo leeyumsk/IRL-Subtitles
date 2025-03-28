@@ -1,0 +1,27 @@
+## Installing ODAS
+
+# Install Required Dependencies
+sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get install cmake g++ git libfftw3-dev libconfig-dev libasound2-dev libpulse-dev libjson-c-dev
+
+# Clone ODAS Repository
+git clone https://github.com/introlab/odas.git
+
+# Build ODAS
+cd odas
+mkdir build
+cd build
+cmake ..
+make
+
+## Moving the build to odas folder
+sudo mv bin ../bin
+
+# To run odas in the bin folder
+cd ../bin
+# To get output in terminal
+sudo ./odaslive -v -c ../config/odaslive/irl-subtitles-config-to-terminal.cfg
+# To get output to send to studio / web  
+sudo ./odaslive -v -c ../config/odaslive/irl-subtitles-config-to-studio.cfg
+
+# The base config file is for it to run locally on the computer with ODAS. To run on external computer change all the ip = "<ip>" line to ip = "<ODAS-web-computers-ip>". ODAS web must be running before ODAS starts.
