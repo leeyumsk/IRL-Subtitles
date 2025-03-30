@@ -33,7 +33,7 @@ This is the code that is running on the ESP32. Most of the code here is for data
 This is the code that will be run on the computer to process the data that is streamed. Due to time constraints the integration of the audio localization was not included in the OpenCV and speech to text display.
 
 ### 3. [Hardware](/Hardware/README.md)
-This has both the PBC files and the glasses cad models.
+This has both the PBC and KiCad files and the glasses cad models.
 
 #### KiCad
 This has the KiCad models that were to produce the boards. That includes the schematics, the PCB files, and gerber files to order the glasses.
