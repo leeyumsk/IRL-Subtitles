@@ -11,7 +11,7 @@ git clone https://github.com/introlab/odas.git
 cd odas
 mkdir build
 cd build
-cmake ..
+cmake ../
 make
 
 ## Moving the build to odas folder
