@@ -1,0 +1,10 @@
+# run in first terminal window
+# start odas web
+cd odas_web
+npm start
+
+
+# run in second terminal window
+# move odas config file adn test raw file to odas folder
+sudo ./pi-audio-odas-stream.py --file ./odas/test6.raw
+sudo ./odas/bin/odaslive -v -c ./odas/irl-sub-test.cfg
