@@ -1,0 +1,6 @@
+To flash the board follow the instrutions at 
+https://docs.espressif.com/projects/vscode-esp-idf-extension/en/latest/startproject.html
+to flash it to the boards use the following settings
+target device: esp32s3 usb-jtag
+find comp port ex. com7
+flash method: DFU

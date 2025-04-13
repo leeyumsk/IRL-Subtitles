@@ -1,0 +1,9 @@
+{
+    "idf.customExtraVars": {
+        "OPENOCD_SCRIPTS": "c:\\Users\\stmve\\Documents\\GitHub\\esp-idf-v5.3.1\\tools\\tools\\openocd-esp32\\v0.10.0-esp32-20190708/openocd-esp32/share/openocd/scripts",
+        "IDF_TARGET": "esp32s3"
+    },
+    "idf.openOcdConfigs": [
+        "board/esp32s3-builtin.cfg"
+    ]
+}
