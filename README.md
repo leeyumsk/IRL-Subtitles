@@ -6,7 +6,7 @@ Using techniques similar to human perception to localize sounds and speakers.
 
 ## Project Details
 
-The final goal of the project is to make AR-Glasses that can display text taken from microphones to be displayed on a heads up display to the user. For future replication, we are only using off the shelf components so that anyone can replicate the project if they so want to.
+The final goal of the project is to make AR-Glasses that can display text taken from microphones to be displayed on a heads up display to the user. The system integrates a microphone array, and a camera to localize sound, transcribe speech, and visually present captions on a laptop screen connected to the glasses. This project would ideally be combined with a smart glass display/platform in the future.
 
 <img src="/Media/OSHE_Logo_300PPI.png" width="250" >
 
@@ -64,3 +64,9 @@ When writing, StuckArt Prototype racer was used as reference
 [Example from site](https://github.com/StuckAtPrototype/Racer/blob/master/README.md?plain=1)
 
 [GitHub Doc](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#links)
+
+[ESP-idf examples softAP](https://github.com/espressif/esp-idf/blob/master/examples/wifi/getting_started/softAP/main/softap_example_main.c)
+
+[ESP-idf examples station](https://github.com/espressif/esp-idf/tree/master/examples/wifi/getting_started/station)
+
+[espressif esp-who ESP32-S3-EYE](https://github.com/espressif/esp-who/blob/master/docs/en/get-started/ESP32-S3-EYE_Getting_Started_Guide.md)
