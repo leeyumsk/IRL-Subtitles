@@ -20,10 +20,10 @@ CHANNELS = 4
 # Microphone array geometry (in meters) - assumed square configuration
 # Adjust these values based on your actual microphone placement
 MIC_POSITIONS = np.array([
-    [-0.05, -0.05, 0],  # Mic 0 (I2S0 Left)
-    [0.05, -0.05, 0],   # Mic 1 (I2S0 Right)
-    [-0.05, 0.05, 0],   # Mic 2 (I2S1 Left)
-    [0.05, 0.05, 0]     # Mic 3 (I2S1 Right)
+    [-0.075, -0.075, 0],  # Mic 0 (I2S0 Left)
+    [-0.075, 0.075, 0],   # Mic 1 (I2S0 Right)
+    [0.075, 0.075, 0],    # Mic 2 (I2S1 Left)
+    [0.075, -0.075, 0]    # Mic 3 (I2S1 Right)
 ])
 
 # Speed of sound in air (m/s)
