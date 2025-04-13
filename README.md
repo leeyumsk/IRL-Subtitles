@@ -11,7 +11,7 @@ The final goal of the project is to make AR-Glasses that can display text taken 
 <img src="/Media/OSHE_Logo_300PPI.png" width="250" >
 
 ## Current State
-The current state of the project is that there is no processing that is happening locally on the board, all the data is being streamed over to a computer to be processed and displayed. There are two ESP32-S3 wroom 1U that are being used to get audio and one ESP32-S3 eye that is acting as an AP and handling the data routing. This is a battery powered data colletion unit.
+The current state of the project is that there is no processing that is happening locally on the board, all the data is being streamed over to a computer to be processed and displayed. There are one ESP32-S3 wroom 1U that are being used to get audio and one ESP32-S3 eye that is acting as an AP and handling the data routing. This is a battery powered data colletion unit.
 
 ## Project Structure
 The project consists of:
@@ -23,7 +23,7 @@ The project consists of:
 Each is structured into their own folders, and sub groups.
 
 ### 1. Firmware
-This is the code that is running on the ESP32. Most of the code here is for data collection and transmission. This code has two main parts, one that will go on the arm boards and one that goes on the eye.
+This is the code that is running on the ESP32. Most of the code here is for data collection and transmission. This code has two main parts, one that will go on the arm board and one that goes on the eye. This was made, built, and flashed using vscode. 
 
 #### Requirements
 - ESP32 IDF

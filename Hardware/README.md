@@ -32,6 +32,13 @@ Version 2.0 was the first version with the ESP32-S3 as the microcontroller to be
 ### Version 2.1 & 2.2
 
 Versions 2.1 and 2.2 are the second iterations of board with the ESP32-S3 with the correct footprint. There are the addition of mouse bites to be printed by an external manufacturer, and layout changes, moving the usb incase of signal degeneration. The changes between the between 2.1 and 2.2 are only the mouse bites that connect the two halfs.
+|Right| | |Left| | 
+| ------------- | ------- | - | ------- | ------------- |
+| GPIO 15 | GPIO 16 | | GND | GPIO 12 | 
+| GPIO 9| GPIO 43 (TX0) | | 3V3 | GPIO 11| 
+| GPIO 10 | GPIO 44 (RX0) | | GPIO 44 (RX0) | GPIO 10 | 
+| GPIO 11 | 3V3 | | GPIO 43 (TX0) | GPIO 9| 
+| GPIO 12 | GND | | GPIO 16 | GPIO 15 |
 
 <img src="/Media/ESP32S3GlassV2.1.png">
 

@@ -8,11 +8,11 @@ Here is where all the different files on the components, configurations, testing
 
 |Right| | |Left| | 
 | ------------- | ------- | - | ------- | ------------- |
-| GPIO 15 | GPIO 16 | | GND | GPIO 12 | 
-| GPIO 9| GPIO 43 (TX0) | | 3V3 | GPIO 11| 
-| GPIO 10 | GPIO 44 (RX0) | | GPIO 44 (RX0) | GPIO 10 | 
-| GPIO 11 | 3V3 | | GPIO 43 (TX0) | GPIO 9| 
-| GPIO 12 | GND | | GPIO 16 | GPIO 15 |
+| GPIO 15 | GPIO 13 (WS) | | GND | WS | 
+| GPIO 9 | GPIO 14 (SCK) | | 3V3 | SCK| 
+| GPIO 10 | GPIO 21 (SD) | | x | x | 
+| GPIO 11 | 3V3 | | x | SDin | 
+| GPIO 12 | GND | | x | LB3v3 |
 
 GPIO 41, 42, and 2 are used for the mics
 
