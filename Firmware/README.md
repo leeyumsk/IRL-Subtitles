@@ -22,7 +22,7 @@ type ">ESP-IDF: Add VS Code Configuration Folder" into the search bar
 5. Flash Board
 Double check the settings at the bottom of the the window they should match the setting conigured in step two.
 
-There is a python scrip that can be run to check the output is what is expected. [playAudiofromESP32v7.py](/Firmware/Arm%20Board/ESP32_Arm_Boards_Station/playAudioFromESP32v7.py) creates a wav file that can be analysis to check that all four channels are getting audio data. The channels on the main board (right side) are channels 3 and 4 and on the left are channels 1 and 2. Will need numpy, sounddevice, and requests installed in the python enviroment. 
+There is a python script that can be run to check the output is what is expected. [playAudiofromESP32v7.py](/Firmware/Arm%20Board/ESP32_Arm_Boards_Station/playAudioFromESP32v7.py) creates a wav file that can be analysis to check that all four channels are getting audio data. The channels on the main board (right side) are channels 3 and 4 and on the left are channels 1 and 2. Will need numpy, sounddevice, and requests installed in the python enviroment. 
 
 ## ESPS3-eye
 
