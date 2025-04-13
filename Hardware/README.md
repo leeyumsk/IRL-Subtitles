@@ -3,7 +3,7 @@ All of the hardware for the project.
 
 ## PCB
 
-The PCB has gone through many revisions before it was eventually ordered and printed.
+The PCB has gone through many revisions before it was eventually ordered and printed. The older version are in ___ branch.
 
 ### Version 1.0
 
