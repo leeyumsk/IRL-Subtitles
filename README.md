@@ -36,7 +36,7 @@ This is the code that will be run on the computer to process the data that is st
 This has both the PBC and KiCad files and the glasses cad models.
 The main commponents are:
 1. Arm boards - Holds the power managment and mics that collect teh audio data.
-2. ESPS3 eye - Collects the visual data and acts as an acess point to route the data.
+2. ESPS3 eye - Collects the visual data and acts as an access point to route the data.
 3. [PowerBoost 1000 Charger](https://www.adafruit.com/product/2465) this haddle the battery.
 4. Frames - Holds all componets in a glasses form to be a warable design.
 
