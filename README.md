@@ -51,7 +51,7 @@ This is all the documentation that was created in the testing and researching on
 
 ## What the Project could use
 1. Faster processing, moving computation on the the board
-2. Better integration between programs, face detect, sound location, and speech to text.
+2. localization of the audio source.
 
 ## Helpful Links
 https://github.com/espressif/esp-who/tree/master
