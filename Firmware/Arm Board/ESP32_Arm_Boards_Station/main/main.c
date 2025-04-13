@@ -20,8 +20,11 @@
 // WiFi configuration
 // #define EXAMPLE_ESP_WIFI_SSID      "test_ssid"
 // #define EXAMPLE_ESP_WIFI_PASS      "test_pass"
-#define EXAMPLE_ESP_WIFI_SSID      "myssid"
-#define EXAMPLE_ESP_WIFI_PASS      "mypassword"
+#define EXAMPLE_ESP_WIFI_SSID      "myssd"
+#define EXAMPLE_ESP_WIFI_PASS      "password"
+#define static_ip                  "192.168.4.254"
+#define ip_gw                      "192.168.4.1"
+#define ip_netmask                 "255.255.255.0"
 // #define EXAMPLE_MAX_STA_CONN       4
 
 // I2S configuration
@@ -106,14 +109,14 @@ static esp_err_t wifi_init_sta(void) {
     memset(&ip_info, 0, sizeof(esp_netif_ip_info_t));
     
     // Convert IP address, gateway, and netmask strings to IP4 address format
-    ESP_ERROR_CHECK(esp_netif_str_to_ip4("192.168.4.254", &ip_info.ip)); //The static IP should be 192.168.4.254
-    ESP_ERROR_CHECK(esp_netif_str_to_ip4("192.168.4.1", &ip_info.gw));
-    ESP_ERROR_CHECK(esp_netif_str_to_ip4("255.255.255.0", &ip_info.netmask));
+    ESP_ERROR_CHECK(esp_netif_str_to_ip4(static_ip, &ip_info.ip)); //The static IP should be 192.168.4.254
+    ESP_ERROR_CHECK(esp_netif_str_to_ip4(ip_gw, &ip_info.gw));
+    ESP_ERROR_CHECK(esp_netif_str_to_ip4(ip_netmask, &ip_info.netmask));
     
     // Set the IP info for the station interface
     ESP_ERROR_CHECK(esp_netif_set_ip_info(sta_netif, &ip_info));
     
-    ESP_LOGI(TAG, "Configured static IP: 192.168.4.2");
+    ESP_LOGI(TAG, "Configured static IP: %s", static_ip);
     
     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
     ret = esp_wifi_init(&cfg);
