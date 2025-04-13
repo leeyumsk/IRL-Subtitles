@@ -20,8 +20,8 @@
 // WiFi configuration
 // #define EXAMPLE_ESP_WIFI_SSID      "test_ssid"
 // #define EXAMPLE_ESP_WIFI_PASS      "test_pass"
-#define EXAMPLE_ESP_WIFI_SSID      "myssd"
-#define EXAMPLE_ESP_WIFI_PASS      "password"
+#define EXAMPLE_ESP_WIFI_SSID      "myssid"
+#define EXAMPLE_ESP_WIFI_PASS      "mypassword"
 #define static_ip                  "192.168.4.254"
 #define ip_gw                      "192.168.4.1"
 #define ip_netmask                 "255.255.255.0"
