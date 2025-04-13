@@ -59,6 +59,15 @@ Version 3.2 and 3.3 are the same as 3.1 and 3.0 respectivly, where the only chan
 
 Version 3.2
 <img src="/Media/ESP32S3GlassV3.2.png">
+These are the pinout for the boards with one esp32.
+|Right| | |Left| | 
+| ------------- | ------- | - | ------- | ------------- |
+| GPIO 15 | GPIO 13 (WS) | | GND | WS | 
+| GPIO 9 | GPIO 14 (SCK) | | 3V3 | SCK| 
+| GPIO 10 | GPIO 21 (SD) | | x | x | 
+| GPIO 11 | 3V3 | | x | SDin | 
+| GPIO 12 | GND | | x | LB3v3 |
+
 Version 3.3
 <img src="/Media/ESP32S3GlassV3.3.png">
 
