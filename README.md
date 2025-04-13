@@ -50,9 +50,10 @@ Onshape was used to the frames that the PCBs will fit in on the glasses.
 This is all the documentation that was created in the testing and researching on creating the glasses. This also has the pinouts that were used on the glasses for reference.
 
 ## What the Project could use
-1. Faster processing, moving computation on the the board
+1. Faster processing, moving computation on the the board.
 2. Better integration between programs, face detect, sound location, and speech to text.
 3. Localization of sound implemnted. 
+4. Battery mangament within code.
 
 ## Helpful Links
 https://github.com/espressif/esp-who/tree/master
