@@ -2,7 +2,7 @@
 
 Here is the firmware that will do on the boards. 
 For both boards ESP-idf will need to be installed to flash both boards and configured in your chossen IDE. To follow along it is recomned to use VScode.
-Insall ESP-IDF into VScode from the vscode extensions: Marketplace
+Insall ESP-IDF into VScode from the vscode extensions: Marketplace and follow this guild to configure it on your computer [guide](https://docs.espressif.com/projects/vscode-esp-idf-extension/en/latest/installation.html) and install v5.3.2.
 
 ## Arm Boards
 
@@ -10,13 +10,17 @@ To flash the board follow the instrutions at [VScode ESP-idf configuration](http
 
 Steps:
 1. Configure ESP-idf
-In Command Pallette / search type >ESP-IDF: Import ESP-IDF Project 
+In Command Pallette / search type >ESP-IDF: Import ESP-IDF Project
+
 2. Select target divice and flashing method
 Target Device: esp32s3 usb-jtag
 Comp Port: com port of esp32s3 ex. com7
 Flash Method: DFU
+
 3. Import vscode configutaion files
-type ">ESP-IDF: Add VS Code Configuration Folder" into the search bar
+Type ">ESP-IDF: Add VS Code Configuration Folder" into the search bar
+This will over write the current folder to point to where esp-idf is .
+
 4. Build the poject
 Check that the bottom of the window shows the setting in step 2 (start:DFU, plug:com/port of ESP32, Chip: esp32s3 usb-jtag )
 
