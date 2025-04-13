@@ -21,6 +21,7 @@ There are more free pin on the ESP32 that are currently not being used, refer to
 
 Eye Addapter Board pins:
 | Top | | | | | |
+| ------ | ----- | ----- | ---- | ---- | ---- |
 | x | x | LB3v3 | SD | SCK | WS|
 | GND | IO46 | IO45 | IO3 | IO0 | 3V3 | 
 | Bottom | | | | | |
