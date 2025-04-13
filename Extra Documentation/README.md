@@ -6,6 +6,7 @@ Here is where all the different files on the components, configurations, testing
 
 (*reference to image in folder img added later once glasses are fully put together*)
 
+| Arm boards |
 |Right| | |Left| | 
 | ------------- | ------- | - | ------- | ------------- |
 | GPIO 15 | GPIO 13 (WS) | | GND | WS | 
@@ -17,6 +18,14 @@ Here is where all the different files on the components, configurations, testing
 GPIO 41, 42, and 2 are used for the mics
 
 There are more free pin on the ESP32 that are currently not being used, refer to the ESP32 documentation to see what pins are not tied to other functions. There is no boot button so GPIO 0 will need to manually bridged to ground to program.
+
+Eye Addapter Board pins
+| Top | | | |
+| | | | |
+| | | | | 
+| Bottom | | | | 
+| | | | |
+| | | | | 
 
 ## Testing
 There was a variety of tests done to figure out some of the specifications of the project.
