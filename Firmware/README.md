@@ -18,12 +18,18 @@ Flash Method: DFU
 3. Import vscode configutaion files
 type ">ESP-IDF: Add VS Code Configuration Folder" into the search bar
 4. Build the poject
+Check that the bottom of the window shows the setting in step 2 (start:DFU, plug:com/port of ESP32, Chip: esp32s3 usb-jtag )
 
 5. Flash Board
 Double check the settings at the bottom of the the window they should match the setting conigured in step two.
+Then click the lighting bolt at the bottom of the window. 
 
+Steps 4 and 5 can be compined into 1 step by using the fire symbol that will build, flash, and monitor the board.
+
+### Trouble shooting
 There is a python script that can be run to check the output is what is expected. [playAudiofromESP32v7.py](/Firmware/Arm%20Board/ESP32_Arm_Boards_Station/playAudioFromESP32v7.py) creates a wav file that can be analysis to check that all four channels are getting audio data. The channels on the main board (right side) are channels 3 and 4 and on the left are channels 1 and 2. Will need numpy, sounddevice, and requests installed in the python enviroment. 
 If problems arise, use the [ESP32_Arm_Board_AP](/Firmware/Arm%20Board/ESP32_Arm_Boards_AP/) to connect to and run the python script in the folder.
+If trouble occurs when flashing close all terminal windows, reopen ESP-IDF terminal and flash using the following command idf.py flash
 
 ## ESPS3-eye
 

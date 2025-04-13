@@ -10,7 +10,7 @@ Version 3.2 is a closser itteration of spring 2025, where there in now only one 
 
 Version 3.2
 <img src="/Media/ESP32S3GlassV3.2.png">
-These are the pinout for the boards with one esp32.
+These are the pinout for the arm boards.
 |Right| | |Left| | 
 | ------------- | ------- | - | ------- | ------------- |
 | GPIO 15 | GPIO 13 (WS) | | GND | WS | 
@@ -18,6 +18,15 @@ These are the pinout for the boards with one esp32.
 | GPIO 10 | GPIO 21 (SD) | | x | x | 
 | GPIO 11 | 3V3 | | x | SDin | 
 | GPIO 12 | GND | | x | LB3v3 |
+
+Eye Adapter Board pins:
+| Top | | | | | |
+| ------ | ----- | ----- | ---- | ---- | ---- |
+| x | x | LB3v3 | SD | SCK | WS|
+| GND | IO46 | IO45 | IO3 | IO0 | 3V3 | 
+| Bottom | | | | | |
+| IO43 | IO21 | IO44 | IO47 | IO48 | GND |
+| X | LB3v3 | SD | SCK | WS | 3V3 | 
 
 In the hardware folder is all the produciton files that is needed to order the PCBs.
 
