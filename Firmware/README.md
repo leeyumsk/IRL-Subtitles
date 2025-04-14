@@ -6,7 +6,7 @@ Install ESP-IDF into VScode from the vscode extensions: Marketplace and follow t
 
 ## Arm Boards
 
-To flash the board follow the instructions at [VScode ESP-idf configuration](https://docs.espressif.com/projects/vscode-esp-idf-extension/en/latest/startproject.html) in this [folder, ESP_Arm_Boards_Station](/Firmware/Arm%20Board/ESP32_Arm_Boards_Station). This will route the data though the access point created by the ESP32S3-eye. 
+To flash the board follow the instructions at [VScode ESP-idf configuration](https://docs.espressif.com/projects/vscode-esp-idf-extension/en/latest/startproject.html) in this [folder, Arm boards/ESP_Arm_Boards_Station](/Firmware/Arm%20Board/ESP32_Arm_Boards_Station). This will route the data though the access point created by the ESP32S3-eye. 
 
 Steps:
 1. Configure ESP-idf
