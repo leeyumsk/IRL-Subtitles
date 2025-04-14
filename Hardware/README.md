@@ -31,3 +31,9 @@ Eye Adapter Board pins:
 In the hardware folder is all the production files that is needed to order the PCBs.
 
 ## Frames
+<img src="/Media/assemblypic.png">
+The frames are designed to clip together without requiring a trip to the hardware store.
+The CAD model is parametrically modeled to assist with personalization.
+The CAD work was done in onshape and is publicly available.
+https://cad.onshape.com/documents/a7485a7ae3b222abdb51885d/w/8202e3e3be7d45f8a3fb9981/e/ac120f3095f84bb498783c7c
+
