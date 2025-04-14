@@ -32,11 +32,11 @@ This is the code that will be run on the computer to process the data that is st
 
 ### 3. [Hardware](/Hardware/README.md)
 This has both the PBC and KiCad files and the glasses cad models.
-The main commponents are:
-1. Arm boards - Holds the power managment and mics that collect teh audio data.
-2. ESPS3 eye - Collects the visual data and acts as an access point to route the data.
-3. [PowerBoost 1000 Charger](https://www.adafruit.com/product/2465) this haddle the battery.
-4. Frames - Holds all componets in a glasses form to be a warable design.
+The main components are:
+1. Arm boards - Holds the power management and mics that collect teh audio data.
+2. ESP32S3 eye - Collects the visual data and acts as an access point to route the data.
+3. [PowerBoost 1000 Charger](https://www.adafruit.com/product/2465) this handle the battery.
+4. Frames - Holds all components in a glasses form to be a wearable design.
 
 #### KiCad
 This has the KiCad models that were to produce the boards. That includes the schematics, the PCB files, and gerber files to order the glasses.
@@ -45,26 +45,24 @@ This has the KiCad models that were to produce the boards. That includes the sch
 Onshape was used to the frames that the PCBs will fit in on the glasses.
 
 ### 4. [Extra Documentation](/Extra%20Documentation/README.md)
-This is all the documentation that was created in the testing and researching on creating the glasses. This also has the pinouts that were used on the glasses for reference.
+This is all the documentation that was created in the testing and researching on creating the glasses. This also has the pin outs that were used on the glasses for reference.
 
 ## What the Project could use
 1. Faster processing, moving computation on the the board.
 2. Better integration between programs, face detect, sound location, and speech to text.
-3. Localization of sound implemnted. 
-4. Battery mangament within code.
+3. Localization of sound implemented. 
+4. Battery management within code.
 
 ## Helpful Links
 https://github.com/espressif/esp-who/tree/master
 
-## Reference (remove nonrelated when published)
-When writing, StuckArt Prototype racer was used as reference
-
-[Example from site](https://github.com/StuckAtPrototype/Racer/blob/master/README.md?plain=1)
-
-[GitHub Doc](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#links)
+## References
 
 [ESP-idf examples softAP](https://github.com/espressif/esp-idf/blob/master/examples/wifi/getting_started/softAP/main/softap_example_main.c)
 
 [ESP-idf examples station](https://github.com/espressif/esp-idf/tree/master/examples/wifi/getting_started/station)
 
 [espressif esp-who ESP32-S3-EYE](https://github.com/espressif/esp-who/blob/master/docs/en/get-started/ESP32-S3-EYE_Getting_Started_Guide.md)
+
+[GitHub Doc](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#links)
+

@@ -1,2 +1,2 @@
 # Face Detection
-Configureing face detection
+Configuring face detection
