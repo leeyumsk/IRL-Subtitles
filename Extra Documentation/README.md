@@ -17,7 +17,7 @@ Arm boards:
 
 GPIO 41, 42, and 2 are used for the mics
 
-There are more free pin on the ESP32 that are currently not being used, refer to the ESP32 documentation to see what pins are not tied to other functions. There is no boot button so GPIO 0 will need to manually bridged to ground to program.
+There are more free pin on the ESP32S3 that are currently not being used, refer to the ESP32S3 documentation to see what pins are not tied to other functions. There is no reset button so boards will need to manually unpluged with the botton held down for the first time.
 
 Eye Adapter Board pins:
 | Top | | | | | |

@@ -1,5 +1,3 @@
-# This branch is format example to go to
-
 # IRL-Subtitles
 
 Using techniques similar to human perception to localize sounds and speakers.
