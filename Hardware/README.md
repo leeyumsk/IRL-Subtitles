@@ -6,7 +6,7 @@ All of the hardware for the project.
 The PCB has gone through many revisions before it was eventually ordered and printed. The older version are in previous versions branch.
 
 ### Version 3.2
-Version 3.2 is a closser itteration of spring 2025, where there in now only one ESP32-S3 on the sides of the frames. This has two spots to place a battery on where the battery WITH A BMS to the board and on to use with a socketed BMS designed like the one from adafuit, [PowerBoost 500 Charger](https://www.adafruit.com/product/1944). The adapter for the eye has also change to pass through the audio data to the other board.
+Version 3.2 is a closser itteration that is used, where there in now only one ESP32-S3 on the sides of the frames. This has two spots to place a battery on where the battery WITH LOW BATTEY SHUTOFF to the board and on to use with a socketed BMS designed like the one from adafuit, [PowerBoost 500 Charger](https://www.adafruit.com/product/1944). The adapter for the eye has also change to pass through the audio data to the other board.
 
 Version 3.2
 <img src="/Media/ESP32S3GlassV3.2.png">
