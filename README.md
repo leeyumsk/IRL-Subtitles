@@ -52,6 +52,7 @@ This is all the documentation that was created in the testing and researching on
 2. Better integration between programs, face detect, sound location, and speech to text.
 3. Localization of sound implemented. 
 4. Battery management within code.
+5. Redesign/filp the ports for the eye adatpetr board be able to connect to eye.
 
 ## Helpful Links
 https://github.com/espressif/esp-who/tree/master
