@@ -1,0 +1,15 @@
+{
+    "C_Cpp.intelliSenseEngine": "default",
+    "idf.espIdfPathWin": "c:\\Users\\stmve\\Documents\\GitHub\\esp\\v5.3.2\\esp-idf",
+    "idf.pythonInstallPath": "c:\\Users\\stmve\\Documents\\GitHub\\.espressif\\tools\\idf-python\\3.11.2\\python.exe",
+    "idf.openOcdConfigs": [
+        "board/esp32s3-builtin.cfg"
+    ],
+    "idf.portWin": "COM7",
+    "idf.toolsPathWin": "c:\\Users\\stmve\\Documents\\GitHub\\.espressif",
+    "idf.customExtraVars": {
+        "OPENOCD_SCRIPTS": "c:\\Users\\stmve\\Documents\\GitHub\\esp-idf-v5.3.1\\tools\\tools\\openocd-esp32\\v0.10.0-esp32-20190708/openocd-esp32/share/openocd/scripts",
+        "IDF_TARGET": "esp32s3"
+    },
+    "idf.flashType": "DFU"
+}
