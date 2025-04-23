@@ -1,0 +1,106 @@
+import os
+import cv2
+import sys
+import numpy as np
+import threading
+import time
+import sounddevice as sd
+import torch
+from faster_whisper import WhisperModel
+import requests
+
+# Global variable to store transcribed text
+transcription_text = ""
+
+# ==================== Speech-to-Text (Runs in Background) ====================
+def record_and_transcribe():
+    global transcription_text
+    SAMPLE_RATE = 16000  # Whisper expects 16kHz
+    CHUNK_DURATION = 5  # Recording duration in seconds
+    OVERLAP_DURATION = 3  # Overlap ensures no gaps
+
+    model = WhisperModel("small", device="cuda" if torch.cuda.is_available() else "cpu", compute_type="float16")
+
+    previous_audio = np.array([], dtype=np.float32)
+
+    while True:
+        audio = sd.rec(int((CHUNK_DURATION + OVERLAP_DURATION) * SAMPLE_RATE), samplerate=SAMPLE_RATE, channels=1, dtype='float32')
+        sd.wait()
+        audio = audio.flatten()
+        combined_audio = np.concatenate((previous_audio, audio)).astype(np.float32)
+
+        segments, _ = model.transcribe(combined_audio, beam_size=5)
+        transcription_text = " ".join(segment.text for segment in segments)
+        print(f"Transcribed: {transcription_text}")
+
+        previous_audio = audio[-int(OVERLAP_DURATION * SAMPLE_RATE):]
+
+transcription_thread = threading.Thread(target=record_and_transcribe, daemon=True)
+transcription_thread.start()
+
+# ==================== Face Detection ====================
+url = 'http://192.168.4.1/stream'  # Replace with actual MJPEG stream URL
+
+def display_mjpeg_stream(url):
+    stream = requests.get(url, stream=True)
+    if stream.status_code != 200:
+        print("Failed to retrieve video stream. Status code:", stream.status_code)
+        return
+
+    byte_data = bytes()
+    net = cv2.dnn.readNetFromCaffe("deploy.prototxt", "res10_300x300_ssd_iter_140000_fp16.caffemodel")
+    in_width, in_height = 300, 300
+    mean = [104, 117, 123]
+    conf_threshold = 0.7
+
+    win_name = "Camera Preview"
+    cv2.namedWindow(win_name, cv2.WINDOW_NORMAL)
+
+    for chunk in stream.iter_content(chunk_size=1024):
+        byte_data += chunk
+        a = byte_data.find(b'\xff\xd8')
+        b = byte_data.find(b'\xff\xd9')
+        
+        if a != -1 and b != -1:
+            jpg_data = byte_data[a:b + 2]
+            byte_data = byte_data[b + 2:]
+            
+            img_array = np.frombuffer(jpg_data, dtype=np.uint8)
+            frame = cv2.imdecode(img_array, cv2.IMREAD_COLOR)
+
+            if frame is not None:
+                frame = cv2.flip(frame, 1)
+                frame_height, frame_width = frame.shape[:2]
+                blob = cv2.dnn.blobFromImage(frame, 1.0, (in_width, in_height), mean, swapRB=False, crop=False)
+                net.setInput(blob)
+                detections = net.forward()
+
+                for i in range(detections.shape[2]):
+                    confidence = detections[0, 0, i, 2]
+                    if confidence > conf_threshold:
+                        x1 = int(detections[0, 0, i, 3] * frame_width)
+                        y1 = int(detections[0, 0, i, 4] * frame_height)
+                        x2 = int(detections[0, 0, i, 5] * frame_width)
+                        y2 = int(detections[0, 0, i, 6] * frame_height)
+
+                        cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
+
+                        # Draw red box below face
+                        box_x1, box_y1 = x1, y2 + 10
+                        box_x2, box_y1 = x2, y2 + 50
+                        cv2.rectangle(frame, (box_x1, box_y1), (box_x2, box_y1), (0, 0, 255), -1)
+
+                        # Display transcribed text inside red box
+                        text = transcription_text[-50:] if transcription_text else "No speech detected"
+                        cv2.putText(frame, text, (x1 + 5, y2 + 35), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
+                
+                cv2.imshow(win_name, frame)
+
+                if cv2.waitKey(1) & 0xFF == ord('q'):
+                    break
+
+    cv2.destroyAllWindows()
+
+face_thread = threading.Thread(target=display_mjpeg_stream, args=(url,))
+face_thread.start()
+face_thread.join()
